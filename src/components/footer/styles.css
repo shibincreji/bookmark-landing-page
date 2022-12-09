@@ -1,0 +1,41 @@
+.footer {
+	background-color: var(--primary-color-dark);
+}
+
+.footer .navlinks {
+	margin-left: 0;
+}
+
+.footer a {
+	color: white;
+}
+
+.sociallinks {
+	display: flex;
+	margin-left: auto;
+	gap: 2rem;
+	align-items: baseline;
+}
+
+.sociallinks > * {
+	cursor: pointer;
+}
+
+footer .navbar svg path {
+	fill: white;
+}
+
+.navbar svg:hover path {
+	fill: var(--secondary-color);
+}
+
+@media (max-width: 800px) {
+	.footer .navbar,
+	.footer .navbar .navlinks {
+		flex-direction: column;
+	}
+
+	.sociallinks {
+		margin-left: 0;
+	}
+}

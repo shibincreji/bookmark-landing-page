@@ -1,0 +1,47 @@
+.hero {
+	position: relative;
+	padding-block: 2rem;
+	overflow: hidden;
+}
+
+.hero .container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2rem;
+	align-items: center;
+}
+
+.hero__content {
+	display: grid;
+	gap: 1.5rem;
+}
+
+.hero__image {
+	transform: scale(1.2) translateY(10px);
+	transform-origin: left;
+}
+
+.hero__btns {
+	display: flex;
+	gap: 1rem;
+}
+
+@media (max-width: 800px) {
+	.hero .container {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+	.hero__image {
+		transform-origin: center;
+		margin-bottom: 2rem;
+	}
+	.hero__content {
+		justify-items: center;
+		text-align: center;
+		grid-row: 2/3;
+	}
+	.hero .round-bg {
+		bottom: 50%;
+		width: 80%;
+	}
+}
